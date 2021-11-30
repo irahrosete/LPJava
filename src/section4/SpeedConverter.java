@@ -1,6 +1,13 @@
 package section4;
 
 public class SpeedConverter {
+  public static void main(String[] args) {
+    double miles = toMilesPerHour(-1);
+    System.out.println("Miles = " + miles);
+
+    printConversion(-2);
+  }
+
   public static long toMilesPerHour(double kilometersPerHour) {
     if (kilometersPerHour < 0) {
       return -1;
