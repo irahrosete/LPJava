@@ -27,5 +27,14 @@ public class Main {
 
     person.setLastName("Smith");
     System.out.println("full name: " + person.getFullName());
+
+    Circle circle = new Circle(3.75);
+    System.out.println("circle radius: " + circle.getRadius());
+    System.out.println("circle area: " + circle.getArea());
+
+    Cylinder cylinder = new Cylinder(circle.getRadius(), 7.25);
+    System.out.println("cylinder area: " + cylinder.getArea());
+    System.out.println("cylinder volume: " + cylinder.getVolume());
+
   }
 }
