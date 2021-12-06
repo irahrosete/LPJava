@@ -1,11 +1,12 @@
 package section9;
 
 public class DeskPhone implements ITelephone{
-    private int phoneNumber;
+    private int myNumber;
     private boolean isRinging;
 
-    public DeskPhone(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public DeskPhone(int myNumber) {
+        this.myNumber = myNumber;
+        this.isRinging = isRinging();
     }
 
     @Override
@@ -28,7 +29,6 @@ public class DeskPhone implements ITelephone{
 
     @Override
     public boolean callPhone(int phoneNumber) {
-        int myNumber = 12345678;
         if (phoneNumber == myNumber) {
             isRinging = true;
             System.out.println("Ring ring...");
